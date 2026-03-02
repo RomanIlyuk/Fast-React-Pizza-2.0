@@ -25,7 +25,7 @@ const fakeCart = [
 ];
 
 function Cart() {
-  const cart = fakeCart;
+  const cart = fakeCart; // eslint-disable-line no-unused-vars
 
   return (
     <div>

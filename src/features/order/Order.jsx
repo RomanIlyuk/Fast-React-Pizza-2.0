@@ -44,13 +44,13 @@ const order = {
 function Order() {
   // Everyone can search for all orders, so for privacy reasons we're gonna gonna exclude names or address, these are only for the restaurant staff
   const {
-    id,
+    id,// eslint-disable-line no-unused-vars
     status,
     priority,
     priorityPrice,
     orderPrice,
     estimatedDelivery,
-    cart,
+    cart,// eslint-disable-line no-unused-vars
   } = order;
   const deliveryIn = calcMinutesLeft(estimatedDelivery);
 
