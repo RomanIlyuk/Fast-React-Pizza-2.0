@@ -10,7 +10,18 @@ const cartSlice = createSlice({
   reducers: {
     addItem(state, action) {
       // payload = newItem
-      state.cart.push(action.payload);
+      const existingItem = state.cart.find(
+        (item) =>
+          item.pizzaId === action.payload.pizzaId ||
+          item.pizzaID === action.payload.pizzaId,
+      );
+      if (existingItem) {
+        existingItem.quantity++;
+        existingItem.totalPrice =
+          existingItem.quantity * existingItem.unitPrice;
+      } else {
+        state.cart.push(action.payload);
+      }
     },
     deleteItem(state, action) {
       // payload = pizzaId

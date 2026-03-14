@@ -48,10 +48,10 @@ function MenuItem({ pizza }) {
           {isIncart && (
             <div className="flex items-center gap-3 sm:gap-8">
               <UpdateItemQuantity
-                pizzaID={id}
+                pizzaId={id}
                 currentQuantity={currentQuantity}
               />
-              <DeleteItem pizzaID={id} />
+              <DeleteItem pizzaId={id} />
             </div>
           )}
 
