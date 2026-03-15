@@ -302,7 +302,7 @@ This structure separates logic by application features, which is a common practi
 
 1️⃣ Clone the repository
 
-### git clone https://github.com/RomanIlyuk/fast-react-pizza-co
+### git clone https://github.com/RomanIlyuk/Fast-React-Pizza-2.0
 
 2️⃣ Navigate to the project folder
 
